@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 // Pages
@@ -22,14 +22,16 @@ const App = () => {
     <>
       {!isOwnerPath && <Navbar setShowLogin={setShowLogin} />}
 
-   <Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/Home" element={<Home />} />  {/* add this */}
-  <Route path="/car-details/:id" element={<CarDetails />} />
-  <Route path="/cars" element={<Cars />} />
-  <Route path="/my-bookings" element={<MyBookings />} />
-</Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/car-details/:id" element={<CarDetails />} />
+        <Route path="/cars" element={<Cars />} />
+        <Route path="/my-bookings" element={<MyBookings />} />
 
+        {/* Redirect all unknown routes to Home */}
+        <Route path="*" element={<Navigate to="/Home" replace />} />
+      </Routes>
     </>
   );
 };
