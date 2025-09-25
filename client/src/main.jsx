@@ -4,10 +4,11 @@ import './index.css';
 import App from './App.jsx';
 import { HashRouter } from 'react-router-dom';
 
-// Force initial redirect to /Home if hash is empty
+
 if (!window.location.hash) {
-  window.location.hash = '/Home';
+  window.location.hash = '/home';  // lowercase to match route
 }
+
 
 createRoot(document.getElementById('root')).render(
   <HashRouter>

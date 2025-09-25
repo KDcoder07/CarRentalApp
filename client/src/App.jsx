@@ -23,15 +23,16 @@ const App = () => {
       {!isOwnerPath && <Navbar setShowLogin={setShowLogin} />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/car-details/:id" element={<CarDetails />} />
-        <Route path="/cars" element={<Cars />} />
-        <Route path="/my-bookings" element={<MyBookings />} />
+  <Route path="/" element={<Home />} />
+  <Route path="/home" element={<Home />} />
+  <Route path="/car-details/:id" element={<CarDetails />} />
+  <Route path="/cars" element={<Cars />} />
+  <Route path="/my-bookings" element={<MyBookings />} />
 
-        {/* Redirect all unknown routes to Home */}
-        <Route path="*" element={<Navigate to="/Home" replace />} />
-      </Routes>
+  {/* Redirect all unknown paths to /home */}
+  <Route path="*" element={<Navigate to="/home" replace />} />
+</Routes>
+
     </>
   );
 };
