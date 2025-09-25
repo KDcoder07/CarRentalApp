@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" stroke="#FFD700" stroke-width="6" fill="white"/>
+
+  <!-- KD Text -->
+  <text x="50%" y="48%" text-anchor="middle" font-size="70" font-family="Segoe UI, Arial, sans-serif" font-weight="900" fill="#FFD700">
+    KD
+  </text>
+
+  <!-- Top upside-down curve -->
+  <path d="M30 65 C80 10, 120 10, 170 65" stroke="#FFD700" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- Rental text -->
+  <text x="50%" y="71%" text-anchor="middle" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#FFD700" letter-spacing="3">
+    RENTAL
+  </text>
+
+  <!-- Bottom upward curve -->
+  <path d="M30 135 C80 180, 120 180, 170 135" stroke="#FFD700" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="450" height="150" viewBox="0 0 450 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KD CarRental logo">
+  <!-- Circle (white fill, gold stroke) -->
+  <circle cx="60" cy="75" r="16" stroke="gold" stroke-width="3" fill="white" />
+
+  <!-- Top curve (golden-orange) -->
+  <path d="M 50 66 Q 60 56 70 66" stroke="#FFD966" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Bottom curve (golden-orange) -->
+  <path d="M 50 84 Q 60 94 70 84" stroke="#FFD966" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- KD inside circle -->
+  <text x="60" y="75" font-size="10" font-weight="800" text-anchor="middle" fill="gold" font-family="Arial, sans-serif" dominant-baseline="middle">
+    KD
+  </text>
+
+  <!-- CarRental to the right -->
+  <text x="100" y="75" font-size="32" font-weight="700" text-anchor="start" fill="gold" font-family="Arial, sans-serif" dominant-baseline="middle">
+    CarRental
+  </text>
+</svg>
