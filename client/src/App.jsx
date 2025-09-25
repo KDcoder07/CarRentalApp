@@ -22,12 +22,14 @@ const App = () => {
     <>
       {!isOwnerPath && <Navbar setShowLogin={setShowLogin} />}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/car-details/:id" element={<CarDetails />} />
-        <Route path="/cars" element={<Cars />} />
-        <Route path="/my-bookings" element={<MyBookings />} />
-      </Routes>
+   <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/Home" element={<Home />} />  {/* add this */}
+  <Route path="/car-details/:id" element={<CarDetails />} />
+  <Route path="/cars" element={<Cars />} />
+  <Route path="/my-bookings" element={<MyBookings />} />
+</Routes>
+
     </>
   );
 };
